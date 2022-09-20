@@ -2,6 +2,23 @@ public class Player {
     private String name;
     private int points;
 
+    public Player(){
+        this("Player");
+    }
+
+    public Player(String name){
+        this(name, 0);
+    }
+
+    public Player(String name, int points){
+        this.name = name;
+        if (points < 0) {
+            this.points = 0;
+        } else {
+            this.points = points;
+        }
+    }
+
     public String getName() {
         return this.name;
     }

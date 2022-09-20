@@ -1,21 +1,28 @@
-public class App {
+public class PlayerMain {
     public static void main(String[] args) throws Exception {
 
-    Player player1 = new Player();
-    Player player2 = new Player();
-    Player player3 = new Player();
+    Player player1 = new Player("Matti");
+    Player player2 = new Player("Jonne", -50);
+    // Player player3 = new Player();
     
-    player1.setName("Matti");
 
-    player1.addPoints(10);
-    player1.addPoints(20);
-    player1.addPoints(30);
+
 
     System.out.println(player1.getInfo());
+
+    System.out.println(player2.getInfo());
+
+    // player1.setName("Matti");
+
+    // player1.addPoints(10);
+    // player1.addPoints(20);
+    // player1.addPoints(30);
+
+    // System.out.println(player1.getInfo());
   
-    player1.setName("Jorma");
+    // player1.setName("Jorma");
 
-    System.out.println(player1.getInfo());
+    // System.out.println(player1.getInfo());
 
 
 
